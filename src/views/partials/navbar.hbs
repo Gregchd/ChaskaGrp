@@ -1,0 +1,57 @@
+<div class="navbar">
+  <i class="bx bx-menu" id="btn" onclick="openNav()"></i>
+  <div class="chaskalogo"><img
+      src="../img/chaskalogo.png"
+    /></div>
+</div>
+<div class="sidebar" id="mySidebar">
+  <div class="equis">
+    <i class="bx bx-x" id="btnx" onclick="closeNav()"></i>
+  </div>
+  <ul class="nav_list">
+    <li>
+      <a href="/">
+        <i class="bx bxs-home"></i>
+        <span class="links_name">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="/news">
+        <i class="bx bxs-news"></i>
+        <span class="links_name">News</span>
+      </a>
+    </li>
+    <li>
+      <a href="/dashboard">
+        <i class="bx bx-grid-alt"></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="/render">
+        <i class="bx bx-shape-triangle"></i>
+        <span class="links_name">Render</span>
+      </a>
+    </li>
+    <li>
+      <a href="/team">
+        <i class="bx bxs-group"></i>
+        <span class="links_name">Team</span>
+      </a>
+    </li>
+    <li>
+      <a href="/contact">
+        <i class="bx bxs-message-detail"></i>
+        <span class="links_name">Contact</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<script>
+  function openNav() { document.getElementById("mySidebar").style.width =
+  "250px"; document.getElementById("main").style.marginLeft = "250px"; }
+  function closeNav() { document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0"; }
+</script>
