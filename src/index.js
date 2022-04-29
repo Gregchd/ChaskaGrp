@@ -8,6 +8,7 @@ import Data from "./models/Data";
 import { Socket } from "socket.io-client";
 
 let datas, dato1, dato2, dato3, dato4, dato5, dato6, dato7;
+let ga;
 
 //app.listen(5000);
 console.log("Server on port: 5000");
@@ -58,8 +59,17 @@ parser.on("data", (datos) => {
   });
 
   //Guardado de datos en mongoDB
-  data.save((err, document) => {
-    if (err) console.log(err);
-    console.log(document);
+  if (ga == "on") {
+    data.save((err, document) => {
+      if (err) console.log(err);
+      //console.log(document);
+    });
+  }
+});
+
+io.on("connection", (socket) => {
+  socket.on("db", (boton) => {
+    console.log(boton); //on/off base de datos
+    ga = boton;
   });
 });

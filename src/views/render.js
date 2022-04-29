@@ -25,4 +25,12 @@ function main() {
   });
 }
 
+document.getElementById("on").onclick = function () {
+  socket.emit("db", "on");
+};
+
+document.getElementById("off").onclick = function () {
+  socket.emit("db", "off");
+};
+
 main();
