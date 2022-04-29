@@ -21,9 +21,16 @@ server.listen(5000);
 
 const io = require("socket.io")(server);
 
-const parser = new serialcom("COM4", { baudRate: 9600 }).pipe(
-  new serialcom.parsers.Readline({ delimiter: "\n" })
+//conexion sin arduino
+const port = new serialcom("COM4", { baudRate: 9600 }).on(
+  "error",
+  function (error) {
+    console.log(error);
+    console.log("Conecte el arduino");
+  }
 );
+
+const parser = port.pipe(new serialcom.parsers.Readline({ delimiter: "\n" }));
 
 parser.on("data", (datos) => {
   if (datos.includes("Data: ")) {
