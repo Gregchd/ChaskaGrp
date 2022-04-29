@@ -12,15 +12,15 @@ git clone https://github.com/Gregchd/ChaskaGrp.git
 
 ## Usage
 
-To use this project you have to install npm and react libreries.
+To use this project you have to install npm librery.
 
 ```bash
-npm intall react
+add command
 ```
 Then, you just have to run a local server with the commands implmented in the react library.
 
 ```bash
-npm run dev
+add command
 ```
 Finally, just plug your microcontroller o data receiver and it is ready to display.
 Make sure you use the following format with the data handler.
