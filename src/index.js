@@ -21,7 +21,7 @@ server.listen(5000);
 
 const io = require("socket.io")(server);
 
-const parser = new serialcom("COM3", { baudRate: 9600 }).pipe(
+const parser = new serialcom("COM5", { baudRate: 9600 }).pipe(
   new serialcom.parsers.Readline({ delimiter: "\n" })
 );
 
@@ -30,7 +30,6 @@ parser.on("data", (datos) => {
     //console.log(datos);
     io.emit("datos-giro", datos);
   }
-
   //enviar datos
   datas = datos.split(" ");
   dato1 = parseInt(datas[1], 10);
@@ -51,8 +50,9 @@ parser.on("data", (datos) => {
     giroscopio: dato7,
   });
 
+  //Guardado de datos en mongoDB
   data.save((err, document) => {
     if (err) console.log(err);
-    //console.log(document);
+    console.log(document);
   });
 });

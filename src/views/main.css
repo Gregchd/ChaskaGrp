@@ -1,110 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
 }
 
-.navbar{
-    background-color: #060b26;
-    height: 80px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    z-index: 5;
+.navbar {
+  background-color: #060b26;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  z-index: 5;
 }
 
-.chaskalogo{
-    display: flex;
-    margin-left: auto;
-    padding-right: 32px;
+.chaskalogo {
+  display: flex;
+  margin-left: auto;
+  padding-right: 32px;
 }
 
-#btn{
-    
-    color: #ffff;
-    left: 90%;
-    top: 6px;
-    font-size: 3rem;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 50px;
-    z-index: 1;
-    transform: translateX(50%);
+#btn {
+  color: #ffff;
+  left: 90%;
+  top: 6px;
+  font-size: 3rem;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  z-index: 1;
+  transform: translateX(50%);
 }
 
-#btnx{
-    
-    color: #ffff;
-    left: 90%;
-    top: 6px;
-    font-size: 3rem;
-    height: 50px;
-    width: 20px;
-    text-align: center;
-    line-height: 50px;
-    z-index: 1;
-    transform: translateX(50%);
+#btnx {
+  color: #ffff;
+  left: 90%;
+  top: 6px;
+  font-size: 3rem;
+  height: 50px;
+  width: 20px;
+  text-align: center;
+  line-height: 50px;
+  z-index: 1;
+  transform: translateX(50%);
 }
 
 .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: #060b26;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 10px;
-    display: flex;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #060b26;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+  display: flex;
+  /*justify-content: center;*/
 }
 
-.sidebar ul{
-    margin-top: 20px;
-    padding-top: 50px;
+.sidebar ul {
+  margin-top: 20px;
+  padding-top: 50px;
+  align-items: center;
 }
 
-.sidebar ul li{
-    position: relative;
-    height: 70px;
-    width: 100%;
-    margin: 0 5px;
-    list-style: none;
-    line-height: 50px;
-    text-align: center;
-    padding: 0 16px;
+.sidebar ul li {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+  text-align: center;
+  padding: 0 0px;
 }
 
-.sidebar ul li a{
-    color: #ffff;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.4 ease;
-    border-radius: 12px;
+.sidebar ul li a {
+  color: #ffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4 ease;
+  border-radius: 12px;
 }
 
-.sidebar ul li a:hover{
-    color: #11101d;
-    background: #ffff;
+.sidebar ul li a:hover {
+  color: #11101d;
+  background: #ffff;
 }
 
-.sidebar ul li a i{
-    height: 40px;
-    min-width: 50px;
-    border-radius: 12px;
-    line-height: 40px;
-    text-align: center;
+.sidebar ul li a i {
+  height: 40px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 40px;
+  text-align: center;
 }
