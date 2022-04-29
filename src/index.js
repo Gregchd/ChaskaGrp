@@ -21,7 +21,7 @@ server.listen(5000);
 
 const io = require("socket.io")(server);
 
-const parser = new serialcom("COM5", { baudRate: 9600 }).pipe(
+const parser = new serialcom("COM4", { baudRate: 9600 }).pipe(
   new serialcom.parsers.Readline({ delimiter: "\n" })
 );
 
